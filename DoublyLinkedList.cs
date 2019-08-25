@@ -161,9 +161,9 @@ namespace DoublyLinkedList
         {
             if (after == null) throw new NullReferenceException();
             Node<T> node_current = after as Node<T>;
-            if (node_current.Previous == null || node_current.Next == null) throw new InvalidOperationException("The node referred as 'before' is no longer in the list");
+            if (node_current.Previous == null || node_current.Next == null) throw new InvalidOperationException("The node referred as 'after' is no longer in the list");
             return AddBetween(value, node_current, node_current.Next);
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
 
         public void Clear()
@@ -177,29 +177,38 @@ namespace DoublyLinkedList
             //Node<T> node = validate(p);
             if (node == null) throw new NullReferenceException();
             Node<T> node_current = node as Node<T>;
-            if (node_current.Previous == null || node_current.Next == null) throw new InvalidOperationException("The node referred as 'before' is no longer in the list");
+            if (Find(node.Value) == null)
+            throw new InvalidOperationException("Node does not exist!");
+            if (node_current.Previous == null || node_current.Next == null) throw new InvalidOperationException("The node referred as 'node' is no longer in the list");
 
             //Node<T> predecessor = node.getPrev();
             //Node<T> successor = node.getNext();
             Node<T> predecessor = node_current.Previous;
             Node<T> successor = node_current.Next;
-
             //predecessor.setNext(successor);
             //successor.setPrev(predecessor);
             predecessor.Next = successor;
             successor.Previous = predecessor;
-            
+
+            //private Node<E> validate(Position<E> p) throws IllegalArgumentException {
+            //if (!(p instanceof Node)) throw new IllegalArgumentException("Invalid p");
+            //Node<E> node = (Node<E>)p; // safe cast
+            //if (node.getNext() == null) // convention for defunct node
+            //throw new IllegalArgumentException("p is no longer in the list");
+            //return node; }
             //size−−;
             Count--;
 
             //T answer = node.getElement();
-            
-            
-            /*node.setElement(null); // help with garbage collection
-            node.setNext(null); // and convention for defunct node
-            node.setPrev(null);
-            throw new NotImplementedException();
-*/        }
+
+            //node.setElement(null); // help with garbage collection
+            //node.setNext(null); // and convention for defunct node
+            //node.setPrev(null);
+            //node_current = null;
+            //node_current.Next = null;
+            //node_current.Previous = null;
+            //throw new NotImplementedException();
+        }
 
         public void RemoveFirst()
         {

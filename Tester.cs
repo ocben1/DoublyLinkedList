@@ -213,63 +213,63 @@ namespace DoubleLinkedList
                 result = result + "-";
             }
             
-            //// test 9
-            //try
-            //{
-            //    Console.WriteLine("\nTest I: Remove the node containing element {0}, which has been recently deleted, with list.Remove(...)", node1.Value);
-            //    list.Remove(node1);
-            //    Console.WriteLine(" :: FAIL: list's state " + list.ToString());
-            //    Console.WriteLine("Last operation is invalid and must throw InvalidOperationException. Your solution does not match specification.");
-            //    result = result + "-";
-            //}
-            //catch (InvalidOperationException)
-            //{
-            //    Console.WriteLine(" :: SUCCESS: list's state " + list.ToString());
-            //    result = result + "I";
-            //}
-            //catch (Exception)
-            //{
-            //    Console.WriteLine(" :: FAIL: list's state " + list.ToString());
-            //    Console.WriteLine("Last operation is invalid and must throw InvalidOperationException. Your solution does not match specification.");
-            //    result = result + "-";
-            //}
-            //
-            //// test 10
-            //try
-            //{
-            //    Console.WriteLine("\nTest J: Clear the content of the vector via calling vector.Clear();");
-            //    list.Clear();
-            //    if (!CheckIntSequence(new int[] { }, list)) throw new Exception("The list stores incorrect data. It must be empty.");
-            //    Console.WriteLine(" :: SUCCESS: list's state " + list.ToString());
-            //    result = result + "J";
-            //}
-            //catch (Exception exception)
-            //{
-            //    Console.WriteLine(" :: FAIL: list's state " + list.ToString());
-            //    Console.WriteLine(exception.ToString());
-            //    result = result + "-";
-            //}
-            //
-            //// test 11
-            //try
-            //{
-            //    Console.WriteLine("\nTest K: Remove last element for the empty list with list.RemoveLast()");
-            //    list.RemoveLast();
-            //    Console.WriteLine(" :: FAIL: list's state " + list.ToString());
-            //    Console.WriteLine("Last operation is invalid and must throw InvalidOperationException. Your solution does not match specification.");
-            //    result = result + "-";
-            //}
-            //catch (InvalidOperationException)
-            //{
-            //    Console.WriteLine(" :: SUCCESS: list's state " + list.ToString());
-            //    result = result + "K";
-            //}
-            //catch (Exception)
-            //{
-            //    Console.WriteLine(" :: FAIL: list's state " + list.ToString());
-            //    Console.WriteLine("Last operation is invalid and must throw InvalidOperationException. Your solution does not match specification.");
-            //    result = result + "-";
-            //}
+            // test 9
+            try
+            {
+                Console.WriteLine("\nTest I: Remove the node containing element {0}, which has been recently deleted, with list.Remove(...)", node1.Value);
+                list.Remove(node1);
+                Console.WriteLine(" :: FAIL: list's state " + list.ToString());
+                Console.WriteLine("Last operation is invalid and must throw InvalidOperationException. Your solution does not match specification.");
+                result = result + "-";
+            }
+            catch (InvalidOperationException)
+            {
+                Console.WriteLine(" :: SUCCESS: list's state " + list.ToString());
+                result = result + "I";
+            }
+            catch (Exception)
+            {
+                Console.WriteLine(" :: FAIL: list's state " + list.ToString());
+                Console.WriteLine("Last operation is invalid and must throw InvalidOperationException. Your solution does not match specification.");
+                result = result + "-";
+            }
+            
+            // test 10
+            try
+            {
+                Console.WriteLine("\nTest J: Clear the content of the vector via calling vector.Clear();");
+                list.Clear();
+                if (!CheckIntSequence(new int[] { }, list)) throw new Exception("The list stores incorrect data. It must be empty.");
+                Console.WriteLine(" :: SUCCESS: list's state " + list.ToString());
+                result = result + "J";
+            }
+            catch (Exception exception)
+            {
+                Console.WriteLine(" :: FAIL: list's state " + list.ToString());
+                Console.WriteLine(exception.ToString());
+                result = result + "-";
+            }
+            
+            // test 11
+            try
+            {
+                Console.WriteLine("\nTest K: Remove last element for the empty list with list.RemoveLast()");
+                list.RemoveLast();
+                Console.WriteLine(" :: FAIL: list's state " + list.ToString());
+                Console.WriteLine("Last operation is invalid and must throw InvalidOperationException. Your solution does not match specification.");
+                result = result + "-";
+            }
+            catch (InvalidOperationException)
+            {
+                Console.WriteLine(" :: SUCCESS: list's state " + list.ToString());
+                result = result + "K";
+            }
+            catch (Exception)
+            {
+                Console.WriteLine(" :: FAIL: list's state " + list.ToString());
+                Console.WriteLine("Last operation is invalid and must throw InvalidOperationException. Your solution does not match specification.");
+                result = result + "-";
+            }
 
 
             Console.WriteLine("\n\n ------------------- SUMMARY ------------------- ");
