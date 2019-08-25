@@ -162,7 +162,7 @@ namespace DoublyLinkedList
         /*Adds a new node containing the specified value at the start of the DoublyLinkedList<T>. Returns the new node
         casted to the INode<T> containing the value.*/
         public INode<T> AddFirst(T value)
-        {
+        { 
             // You should replace this plug by your code.
             throw new NotImplementedException();
         }

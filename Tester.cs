@@ -55,7 +55,7 @@ namespace DoubleLinkedList
             }
 
             // test 3
-            try
+            /*try
             {
                 Console.WriteLine("\nTest C: Remove sequentially 4 last numbers with list.RemoveLast( )");
                 list.RemoveLast();
@@ -71,7 +71,7 @@ namespace DoubleLinkedList
                 Console.WriteLine(" :: FAIL: list's state " + list.ToString());
                 Console.WriteLine(exception.ToString());
                 result = result + "-";
-            }
+            }*/
 
             // test 4
             try
@@ -90,7 +90,7 @@ namespace DoubleLinkedList
             }
 
             // test 5
-            try
+            /*try
             {
                 Console.WriteLine("\nTest E: Remove sequentially 3 last numbers with list.RemoveFirst( )");
                 list.RemoveFirst();
@@ -269,7 +269,7 @@ namespace DoubleLinkedList
                 Console.WriteLine(" :: FAIL: list's state " + list.ToString());
                 Console.WriteLine("Last operation is invalid and must throw InvalidOperationException. Your solution does not match specification.");
                 result = result + "-";
-            }
+            }*/
 
 
             Console.WriteLine("\n\n ------------------- SUMMARY ------------------- ");
