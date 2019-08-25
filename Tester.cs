@@ -89,52 +89,52 @@ namespace DoubleLinkedList
                 result = result + "-";
             }
 
-            //// test 5
-            //try
-            //{
-            //    Console.WriteLine("\nTest E: Remove sequentially 3 last numbers with list.RemoveFirst( )");
-            //    list.RemoveFirst();
-            //    list.RemoveFirst();
-            //    list.RemoveFirst();
-            //    if (!CheckIntSequence(new int[] { 20, 10, 2, 6, 8, 5, 1 }, list)) throw new Exception("The list stores incorrect sequence of integers");
-            //    Console.WriteLine(" :: SUCCESS: list's state " + list.ToString());
-            //    result = result + "E";
-            //}
-            //catch (Exception exception)
-            //{
-            //    Console.WriteLine(" :: FAIL: list's state " + list.ToString());
-            //    Console.WriteLine(exception.ToString());
-            //    result = result + "-";
-            //}
-            //
-            //INode<int> node1 = null;
-            //// test 6
-            //try
-            //{
-            //    Console.WriteLine("\nTest F: Run a sequence of operations: ");
-            //
-            //    Console.WriteLine("list.Find(40);");
-            //    if (list.Find(40) == null) Console.WriteLine(" :: SUCCESS: list's state " + list.ToString());
-            //    else throw new Exception("40 must no longer be in the list");
-            //
-            //    Console.WriteLine("list.Find(0);");
-            //    if (list.Find(0) == null) Console.WriteLine(" :: SUCCESS: list's state " + list.ToString());
-            //    else throw new Exception("0 must not be in the list");
-            //
-            //    Console.WriteLine("list.Find(2);");
-            //    node1 = list.Find(2);
-            //    if (node1 != null && node1.Value == 2) Console.WriteLine(" :: SUCCESS: list's state " + list.ToString());
-            //    else throw new Exception("2 must be in the list, but 'list.Find(2)' does not return the correct result");
-            //
-            //    result = result + "F";
-            //}
-            //catch (Exception exception)
-            //{
-            //    Console.WriteLine(" :: FAIL: list's state " + list.ToString());
-            //    Console.WriteLine(exception.ToString());
-            //    result = result + "-";
-            //}
-            //
+            // test 5
+            try
+            {
+                Console.WriteLine("\nTest E: Remove sequentially 3 last numbers with list.RemoveFirst( )");
+                list.RemoveFirst();
+                list.RemoveFirst();
+                list.RemoveFirst();
+                if (!CheckIntSequence(new int[] { 20, 10, 2, 6, 8, 5, 1 }, list)) throw new Exception("The list stores incorrect sequence of integers");
+                Console.WriteLine(" :: SUCCESS: list's state " + list.ToString());
+                result = result + "E";
+            }
+            catch (Exception exception)
+            {
+                Console.WriteLine(" :: FAIL: list's state " + list.ToString());
+                Console.WriteLine(exception.ToString());
+                result = result + "-";
+            }
+            
+            INode<int> node1 = null;
+            // test 6
+            try
+            {
+                Console.WriteLine("\nTest F: Run a sequence of operations: ");
+            
+                Console.WriteLine("list.Find(40);");
+                if (list.Find(40) == null) Console.WriteLine(" :: SUCCESS: list's state " + list.ToString());
+                else throw new Exception("40 must no longer be in the list");
+            
+                Console.WriteLine("list.Find(0);");
+                if (list.Find(0) == null) Console.WriteLine(" :: SUCCESS: list's state " + list.ToString());
+                else throw new Exception("0 must not be in the list");
+            
+                Console.WriteLine("list.Find(2);");
+                node1 = list.Find(2);
+                if (node1 != null && node1.Value == 2) Console.WriteLine(" :: SUCCESS: list's state " + list.ToString());
+                else throw new Exception("2 must be in the list, but 'list.Find(2)' does not return the correct result");
+            
+                result = result + "F";
+            }
+            catch (Exception exception)
+            {
+                Console.WriteLine(" :: FAIL: list's state " + list.ToString());
+                Console.WriteLine(exception.ToString());
+                result = result + "-";
+            }
+            
             //// test 7
             //try
             //{
