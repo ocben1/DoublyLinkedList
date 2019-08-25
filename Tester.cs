@@ -179,40 +179,40 @@ namespace DoubleLinkedList
                 result = result + "-";
             }
             
-            //// test 8
-            //try
-            //{
-            //    Console.WriteLine("\nTest H: Run a sequence of operations: ");
-            //
-            //    Console.WriteLine("Remove the node list.First with list.Remove(list.First)");
-            //    list.Remove(list.First);
-            //    if (!CheckIntSequence(new int[] { 400, 20, 10, 100, 2, 200, 6, 8, 5, 500, 1, 600 }, list)) throw new Exception("The list stores incorrect sequence of integers");
-            //    Console.WriteLine(" :: SUCCESS: list's state " + list.ToString());
-            //
-            //    Console.WriteLine("Remove the node list.Last with list.Remove(list.Last)");
-            //    list.Remove(list.Last);
-            //    if (!CheckIntSequence(new int[] { 400, 20, 10, 100, 2, 200, 6, 8, 5, 500, 1 }, list)) throw new Exception("The list stores incorrect sequence of integers");
-            //    Console.WriteLine(" :: SUCCESS: list's state " + list.ToString());
-            //
-            //    Console.WriteLine("Remove the node list.Before, which is before the node containing element {0}, with list.Remove(list.Before(...))", node1.Value);
-            //    list.Remove(list.Before(node1));
-            //    if (!CheckIntSequence(new int[] { 400, 20, 10, 2, 200, 6, 8, 5, 500, 1 }, list)) throw new Exception("The list stores incorrect sequence of integers");
-            //    Console.WriteLine(" :: SUCCESS: list's state " + list.ToString());
-            //
-            //    Console.WriteLine("Remove the node containing element {0} with list.Remove(...)", node1.Value);
-            //    list.Remove(node1);
-            //    if (!CheckIntSequence(new int[] { 400, 20, 10, 200, 6, 8, 5, 500, 1 }, list)) throw new Exception("The list stores incorrect sequence of integers");
-            //    Console.WriteLine(" :: SUCCESS: list's state " + list.ToString());
-            //
-            //    result = result + "H";
-            //}
-            //catch (Exception exception)
-            //{
-            //    Console.WriteLine(" :: FAIL: list's state " + list.ToString());
-            //    Console.WriteLine(exception.ToString());
-            //    result = result + "-";
-            //}
-            //
+            // test 8
+            try
+            {
+                Console.WriteLine("\nTest H: Run a sequence of operations: ");
+            
+                Console.WriteLine("Remove the node list.First with list.Remove(list.First)");
+                list.Remove(list.First);
+                if (!CheckIntSequence(new int[] { 400, 20, 10, 100, 2, 200, 6, 8, 5, 500, 1, 600 }, list)) throw new Exception("The list stores incorrect sequence of integers");
+                Console.WriteLine(" :: SUCCESS: list's state " + list.ToString());
+            
+                Console.WriteLine("Remove the node list.Last with list.Remove(list.Last)");
+                list.Remove(list.Last);
+                if (!CheckIntSequence(new int[] { 400, 20, 10, 100, 2, 200, 6, 8, 5, 500, 1 }, list)) throw new Exception("The list stores incorrect sequence of integers");
+                Console.WriteLine(" :: SUCCESS: list's state " + list.ToString());
+            
+                Console.WriteLine("Remove the node list.Before, which is before the node containing element {0}, with list.Remove(list.Before(...))", node1.Value);
+                list.Remove(list.Before(node1));
+                if (!CheckIntSequence(new int[] { 400, 20, 10, 2, 200, 6, 8, 5, 500, 1 }, list)) throw new Exception("The list stores incorrect sequence of integers");
+                Console.WriteLine(" :: SUCCESS: list's state " + list.ToString());
+            
+                Console.WriteLine("Remove the node containing element {0} with list.Remove(...)", node1.Value);
+                list.Remove(node1);
+                if (!CheckIntSequence(new int[] { 400, 20, 10, 200, 6, 8, 5, 500, 1 }, list)) throw new Exception("The list stores incorrect sequence of integers");
+                Console.WriteLine(" :: SUCCESS: list's state " + list.ToString());
+            
+                result = result + "H";
+            }
+            catch (Exception exception)
+            {
+                Console.WriteLine(" :: FAIL: list's state " + list.ToString());
+                Console.WriteLine(exception.ToString());
+                result = result + "-";
+            }
+            
             //// test 9
             //try
             //{
