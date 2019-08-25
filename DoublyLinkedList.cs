@@ -214,14 +214,17 @@ namespace DoublyLinkedList
 
         public void RemoveFirst()
         {
+            if (Head == null) //if list is empty
+                throw new InvalidOperationException("Node does not exist!");
             Remove(Head.Next);
-            //throw new NotImplementedException();
         }
 
         public void RemoveLast()
         {
+
+            if (Head == null) //if list is empty
+                throw new InvalidOperationException("Node does not exist!");
             Remove(Tail.Previous);
-            //throw new NotImplementedException();
         }
 
     }
