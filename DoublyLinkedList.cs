@@ -144,15 +144,25 @@ namespace DoublyLinkedList
             return AddBetween(value, Head, Head.Next);
         }
 
-        public INode<T> AddBefore(INode<T> before, T value)
+        /*Adds a new node before the specified node of the DoublyLinkedList<T> and records the given value as its payload.
+         * It returns the newly created node casted to the INode<T>. If the node specified as an argument is null, the
+         * method throws the ArgumentNullException. If the node specified as argument does not exist in the
+         * DoublyLinkedList<T>, the method throws the InvalidOperationException.*/
+        public INode<T> AddBefore(INode<T> before, T value) //
         {
-            // You should replace this plug by your code.
-            throw new NotImplementedException();
+            if (before == null) throw new NullReferenceException();
+            Node<T> node_current = before as Node<T>;
+            if (node_current.Previous == null || node_current.Next == null) throw new InvalidOperationException("The node referred as 'before' is no longer in the list");
+            return AddBetween(value, node_current.Previous, node_current);
+            //throw new NotImplementedException();
         }
 
         public INode<T> AddAfter(INode<T> after, T value)
         {
-            // You should replace this plug by your code.
+            if (after == null) throw new NullReferenceException();
+            Node<T> node_current = after as Node<T>;
+            if (node_current.Previous == null || node_current.Next == null) throw new InvalidOperationException("The node referred as 'before' is no longer in the list");
+            return AddBetween(value, node_current, node_current.Next);
             throw new NotImplementedException();
         }
 

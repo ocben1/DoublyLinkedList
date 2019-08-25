@@ -135,50 +135,50 @@ namespace DoubleLinkedList
                 result = result + "-";
             }
             
-            //// test 7
-            //try
-            //{
-            //    Console.WriteLine("\nTest G: Run a sequence of operations: ");
-            //
-            //    Console.WriteLine("Add {1} before the node with {0} with list.AddBefore({0},{1})", node1.Value, 100);
-            //    list.AddBefore(node1, 100);
-            //    if (!CheckIntSequence(new int[] { 20, 10, 100, 2, 6, 8, 5, 1 }, list)) throw new Exception("The list stores incorrect sequence of integers");
-            //    Console.WriteLine(" :: SUCCESS: list's state " + list.ToString());
-            //
-            //    Console.WriteLine("Add {1} after the node with {0} with list.AddAfter({0},{1})", node1.Value, 200);
-            //    list.AddAfter(node1, 200);
-            //    if (!CheckIntSequence(new int[] { 20, 10, 100, 2, 200, 6, 8, 5, 1 }, list)) throw new Exception("The list stores incorrect sequence of integers");
-            //    Console.WriteLine(" :: SUCCESS: list's state " + list.ToString());
-            //
-            //    Console.WriteLine("Add {0} before node list.First with list.AddBefore(list.First,{0})", 300);
-            //    list.AddBefore(list.First, 300);
-            //    if (!CheckIntSequence(new int[] { 300, 20, 10, 100, 2, 200, 6, 8, 5, 1 }, list)) throw new Exception("The list stores incorrect sequence of integers");
-            //    Console.WriteLine(" :: SUCCESS: list's state " + list.ToString());
-            //
-            //    Console.WriteLine("Add {0} after node list.First with list.AddAfter(list.First,{0})", 400);
-            //    list.AddAfter(list.First, 400);
-            //    if (!CheckIntSequence(new int[] { 300, 400, 20, 10, 100, 2, 200, 6, 8, 5, 1 }, list)) throw new Exception("The list stores incorrect sequence of integers");
-            //    Console.WriteLine(" :: SUCCESS: list's state " + list.ToString());
-            //
-            //    Console.WriteLine("Add {0} before node list.First with list.AddBefore(list.Last,{0})", 500);
-            //    list.AddBefore(list.Last, 500);
-            //    if (!CheckIntSequence(new int[] { 300, 400, 20, 10, 100, 2, 200, 6, 8, 5, 500, 1 }, list)) throw new Exception("The list stores incorrect sequence of integers");
-            //    Console.WriteLine(" :: SUCCESS: list's state " + list.ToString());
-            //
-            //    Console.WriteLine("Add {0} after node list.First with list.AddAfter(list.Last,{0})", 600);
-            //    list.AddAfter(list.Last, 600);
-            //    if (!CheckIntSequence(new int[] { 300, 400, 20, 10, 100, 2, 200, 6, 8, 5, 500, 1, 600 }, list)) throw new Exception("The list stores incorrect sequence of integers");
-            //    Console.WriteLine(" :: SUCCESS: list's state " + list.ToString());
-            //
-            //    result = result + "G";
-            //}
-            //catch (Exception exception)
-            //{
-            //    Console.WriteLine(" :: FAIL: list's state " + list.ToString());
-            //    Console.WriteLine(exception.ToString());
-            //    result = result + "-";
-            //}
-            //
+            // test 7
+            try
+            {
+                Console.WriteLine("\nTest G: Run a sequence of operations: ");
+            
+                Console.WriteLine("Add {1} before the node with {0} with list.AddBefore({0},{1})", node1.Value, 100);
+                list.AddBefore(node1, 100);
+                if (!CheckIntSequence(new int[] { 20, 10, 100, 2, 6, 8, 5, 1 }, list)) throw new Exception("The list stores incorrect sequence of integers");
+                Console.WriteLine(" :: SUCCESS: list's state " + list.ToString());
+            
+                Console.WriteLine("Add {1} after the node with {0} with list.AddAfter({0},{1})", node1.Value, 200);
+                list.AddAfter(node1, 200);
+                if (!CheckIntSequence(new int[] { 20, 10, 100, 2, 200, 6, 8, 5, 1 }, list)) throw new Exception("The list stores incorrect sequence of integers");
+                Console.WriteLine(" :: SUCCESS: list's state " + list.ToString());
+            
+                Console.WriteLine("Add {0} before node list.First with list.AddBefore(list.First,{0})", 300);
+                list.AddBefore(list.First, 300);
+                if (!CheckIntSequence(new int[] { 300, 20, 10, 100, 2, 200, 6, 8, 5, 1 }, list)) throw new Exception("The list stores incorrect sequence of integers");
+                Console.WriteLine(" :: SUCCESS: list's state " + list.ToString());
+            
+                Console.WriteLine("Add {0} after node list.First with list.AddAfter(list.First,{0})", 400);
+                list.AddAfter(list.First, 400);
+                if (!CheckIntSequence(new int[] { 300, 400, 20, 10, 100, 2, 200, 6, 8, 5, 1 }, list)) throw new Exception("The list stores incorrect sequence of integers");
+                Console.WriteLine(" :: SUCCESS: list's state " + list.ToString());
+            
+                Console.WriteLine("Add {0} before node list.First with list.AddBefore(list.Last,{0})", 500);
+                list.AddBefore(list.Last, 500);
+                if (!CheckIntSequence(new int[] { 300, 400, 20, 10, 100, 2, 200, 6, 8, 5, 500, 1 }, list)) throw new Exception("The list stores incorrect sequence of integers");
+                Console.WriteLine(" :: SUCCESS: list's state " + list.ToString());
+            
+                Console.WriteLine("Add {0} after node list.First with list.AddAfter(list.Last,{0})", 600);
+                list.AddAfter(list.Last, 600);
+                if (!CheckIntSequence(new int[] { 300, 400, 20, 10, 100, 2, 200, 6, 8, 5, 500, 1, 600 }, list)) throw new Exception("The list stores incorrect sequence of integers");
+                Console.WriteLine(" :: SUCCESS: list's state " + list.ToString());
+            
+                result = result + "G";
+            }
+            catch (Exception exception)
+            {
+                Console.WriteLine(" :: FAIL: list's state " + list.ToString());
+                Console.WriteLine(exception.ToString());
+                result = result + "-";
+            }
+            
             //// test 8
             //try
             //{
