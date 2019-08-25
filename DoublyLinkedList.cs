@@ -168,8 +168,10 @@ namespace DoublyLinkedList
 
         public void Clear()
         {
-            // You should replace this plug by your code.
-            throw new NotImplementedException();
+            Head = null;
+            Count = 0;
+
+            //throw new NotImplementedException();
         }
 
         public void Remove(INode<T> node)
