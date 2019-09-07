@@ -234,8 +234,12 @@ namespace DoublyLinkedList
             //reassign neighbouring nodes so the node to be deleted has no more pointer references
             predecessor.Next = successor;
             successor.Previous = predecessor;
+            
 
             Count--;
+            node_current.Previous = null; //nullify to ensure there are not lingering pointers to the node
+            node_current.Next = null;
+            node_current = null;
 
         }
         /*Removes the node at the start of the DoublyLinkedList<T>. If the DoublyLinkedList<T> is empty, it throws
